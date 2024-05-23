@@ -7,13 +7,11 @@
 </head>
 <body>
     <script>
-        var fact=1, i=1;
-        var num=parseInt(prompt("enter the number"))
-        for(i=1;i<=num;i++)
+        async function fun()
         {
-           fact=fact*i 
+            return "hello";
         }
-        console.log("output:1*2*3*4*5="+fact)
+        console.log(fun());
     </script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+Common Topic:
+=================
+10. What are CSS media queries, and how are they used for responsive design?
+Interview question: Explain CSS media queries and their role in responsive web design.
+
+Answer: CSS media queries are a technique used to apply different styles based on the characteristics of the user's device, such as screen width, screen height, or device type. They are a key component of responsive web design, allowing developers to create layouts that adapt to different screen sizes and orientations.
+
+A media query consists of a media type, such as screen or print, and one or more expressions that evaluate to true or false. If the media type and expressions match the user's device, the styles within the media query block will be applied.
+
+Example:
+
+/* Default styles for all devices */
+body {
+  font-size: 16px;
+}
+
+/* Styles for screens with a width of 768 pixels or more */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Styles for screens with a width of 1024 pixels or more */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
