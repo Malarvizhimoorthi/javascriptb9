@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function change()
+        {
+            var col = '#' + Math.floor(Math.random()*16777215).toString(16)
+            document.body.style.backgroundColor = col
+        }
+    </script>
 </head>
 <body>
-    <script>
-      function factorial(n) {
-    if (n < 0) return "Factorial for negative numbers is not defined";
-    if (n === 0 || n === 1) return 1;
-    let result = 1;
-    for (let i = 2; i <= n; i++) {
-        result *= i;
-    }
-    return result;
-}
-console.log(factorial(5)); // Testing the function with 5
-       </script> 
+    <center>
+        <button id="update" onclick="change()">Change Color</button>
+    </center>
 </body>
-</html>
