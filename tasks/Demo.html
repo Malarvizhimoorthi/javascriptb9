@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Document</title>
+    <style>
+        P {
+     Font-size: 2rem;
+     Font-weight: bold;
+    }
+
+    /* works if the second child element is of type p */
+    P:nth-child(2) {
+     Color: red;
+    }
+
+
+    /* does not work as the fourth child element is not of type p */
+    H1:nth-child(4) {
+     Color: blue;
+    }
+
+    /* applied to second p element */
+    P:nth-of-type(3) {
+     Color: green;
+   }
+
+    </style>
+</head>
+<body>
+<h1>A</h1>  
+ <p>B</p> 
+ <p>C</p> 
+ <h1>D</h1>
+ <p>E</p>
+ 
+
+
+
+</body>
+</html>
+
